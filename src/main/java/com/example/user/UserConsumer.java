@@ -13,9 +13,9 @@ public class UserConsumer implements Consumer {
 	private final Logger logger = LoggerFactory.getLogger(UserConsumer.class);
 
 	@Override
-	@KafkaListener(topics = "users", groupId = "group_id")
-	public void consume(String message) {
+	@KafkaListener(topics = "users", groupId = "example_id")
+	public void consume(User message) {
 
-		logger.info(String.format("#### -> Consumed message -> %s", message));
+		logger.info(String.format("#### -> Consumed message -> %s", message.toString()));
 	}
 }

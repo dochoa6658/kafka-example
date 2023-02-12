@@ -15,10 +15,10 @@ public class UserProducer implements Producer {
 	private static final String TOPIC = "users";
 
 	@Autowired
-	private KafkaTemplate<String, String> kafkaTemplate;
+	private KafkaTemplate<String, User> kafkaTemplate;
 
 	@Override
-	public void sendMessage(String message) {
+	public void sendMessage(User message) {
 
 		logger.info(String.format("###### -> Producing message -> %s", message));
 		this.kafkaTemplate.send(TOPIC, message);
