@@ -1,6 +1,4 @@
-package com.example.kafka;
-
-import com.example.user.User;
+package com.example.user;
 
 public interface Consumer {
 

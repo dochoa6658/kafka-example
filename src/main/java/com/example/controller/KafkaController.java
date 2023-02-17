@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.infra.kafka.user.UserProducer;
 import com.example.user.User;
-import com.example.user.UserProducer;
 
 @RestController
 @RequestMapping(value = "/kafka")

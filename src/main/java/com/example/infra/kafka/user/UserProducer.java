@@ -1,4 +1,4 @@
-package com.example.user;
+package com.example.infra.kafka.user;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.example.kafka.Producer;
+import com.example.user.Producer;
+import com.example.user.User;
 
 @Service
 public class UserProducer implements Producer {
